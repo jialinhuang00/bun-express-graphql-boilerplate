@@ -1,10 +1,5 @@
-export const typeDefs = `#graphql
-  type Query {
-    getAllCompanies: [Company]
-    getAllPosts: [Post]
-  }
-
- type Company {
+export const companyType = `#graphql
+    type Company {
         _id: ID
         name: String
         permalink: String
@@ -46,21 +41,4 @@ export const typeDefs = `#graphql
         title: String
         person: String
     }
-    type Comment {
-        body: String
-        email: String
-        author: String
-    }
-
-    type Post {
-        _id: ID
-        body: String
-        permalink: String
-        author: String
-        title: String
-        tags: [String]
-        comments: [Comment]
-        date: String
-    }
-
 `;

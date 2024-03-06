@@ -18,4 +18,4 @@ export const postSchema = new mongoose.Schema({
   date: Date,
 });
 
-export const Post = mongoose.model("Post", postSchema);
+export const Posts = mongoose.model("Posts", postSchema);

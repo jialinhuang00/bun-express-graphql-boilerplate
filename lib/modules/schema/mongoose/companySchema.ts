@@ -39,3 +39,5 @@ export const companySchema = new mongoose.Schema({
     },
   ],
 });
+
+export const Companies = mongoose.model("Companies", companySchema);
