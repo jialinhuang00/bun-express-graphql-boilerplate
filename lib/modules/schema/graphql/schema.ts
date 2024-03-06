@@ -1,7 +1,7 @@
 export const typeDefs = `#graphql
   type Query {
-    getAllCompanies: [Company]
-    getAllPosts: [Post]
+    getFirstTenCompanies: [Company]
+    getFirstFivePosts: [Post]
   }
 
  type Company {

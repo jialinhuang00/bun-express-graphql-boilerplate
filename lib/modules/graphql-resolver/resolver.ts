@@ -3,11 +3,11 @@ import { Posts } from "@/lib/modules/schema/mongoose/postSchema";
 
 export const resolvers = {
   Query: {
-    async getAllCompanies() {
+    async getFirstTenCompanies() {
       return await Companies.find({}).limit(10);
     },
-    async getAllPosts() {
-      return await Posts.find({});
+    async getFirstFivePosts() {
+      return await Posts.find({}).limit(5);
     },
   },
 };
